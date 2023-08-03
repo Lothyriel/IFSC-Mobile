@@ -1,7 +1,7 @@
 const idadeDias = (dia, mes, ano) => {
-    let today = new Date()
-    const tDia = today.getDay()
-    const tMes = today.getMonth()
+    const today = new Date()
+    const tDia = today.getDate()
+    const tMes = today.getMonth() + 1   //começa em 0 kkkkkkkkkk
     const tAno = today.getFullYear()
 
     const anos = tAno - ano
@@ -15,5 +15,5 @@ const idadeDias = (dia, mes, ano) => {
 }
 
 test('04', () => {
-    expect(idadeDias(27, 4, 2001)).toBe(8097)
+    expect(idadeDias(27, 4, 2001)).toBe(8126)
 });
