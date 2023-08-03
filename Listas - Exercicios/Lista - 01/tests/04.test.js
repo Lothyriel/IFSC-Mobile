@@ -1,4 +1,4 @@
-const idadeDias = (dia, mes, ano) => {
+const idadeDias = function (dia, mes, ano) {
     const today = new Date()
     const tDia = today.getDate()
     const tMes = today.getMonth() + 1   //começa em 0 kkkkkkkkkk
