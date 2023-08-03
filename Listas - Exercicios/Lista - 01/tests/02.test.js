@@ -12,11 +12,11 @@ function conversorTemperatura(entrada, saida, temp) {
     }
 
     const conversorToKelvin = toKelvin[entrada]
-    
+
     if (!conversorToKelvin) {
         return -1
     }
-    
+
     const kelvin = conversorToKelvin(temp)
 
     const fromKelvinConversor = fromKelvin[saida]
