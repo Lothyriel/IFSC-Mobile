@@ -1,4 +1,4 @@
-function conversorTemperatura(entrada, saida, temp) {
+function conversorTemperatura(temp, entrada, saida) {
     const toKelvin = {
         'C': (t) => t + 273.15,
         'F': (t) => (t - 32) * 1.8 + 273.15,
@@ -29,9 +29,10 @@ function conversorTemperatura(entrada, saida, temp) {
 }
 
 test('02', () => {
-    expect(conversorTemperatura('C', 'C', 100)).toBeCloseTo(100)
-    expect(conversorTemperatura('C', 'K', 100)).toBeCloseTo(373.15)
-    expect(conversorTemperatura('K', 'C', 300)).toBeCloseTo(26.85)
-    expect(conversorTemperatura('C', 'F', 100)).toBeCloseTo(212)
-    expect(conversorTemperatura('K', 'F', 300)).toBeCloseTo(80.33)
+    expect(conversorTemperatura(100, 'C', 'C')).toBeCloseTo(100)
+    expect(conversorTemperatura(100, 'C', 'C')).toBeCloseTo(100)
+    expect(conversorTemperatura(100, 'C', 'K')).toBeCloseTo(373.15)
+    expect(conversorTemperatura(300, 'K', 'C')).toBeCloseTo(26.85)
+    expect(conversorTemperatura(100, 'C', 'F')).toBeCloseTo(212)
+    expect(conversorTemperatura(300, 'K', 'F')).toBeCloseTo(80.33)
 });
