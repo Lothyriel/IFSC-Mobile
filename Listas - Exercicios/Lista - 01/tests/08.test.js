@@ -13,4 +13,4 @@ test('08', () => {
     expect(cifraCesar('marx', 1)).toBe('nbsy')
     expect(cifraCesar('zzzz', 1)).toBe('aaaa')
     expect(cifraCesar('aaaa', 1)).toBe('bbbb')
-});
+})

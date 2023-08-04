@@ -45,4 +45,4 @@ test('07', () => {
     expect(isPalindrome('sós')).toBe(true)
     expect(isPalindrome('')).toBe(true)
     expect(isPalindrome('anaconda')).toBe(false)
-});
+})

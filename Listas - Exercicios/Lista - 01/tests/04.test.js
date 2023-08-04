@@ -16,4 +16,4 @@ const idadeDias = function (dia, mes, ano) {
 
 test('04', () => {
     expect(idadeDias(27, 4, 2001)).toBe(8126)
-});
+})

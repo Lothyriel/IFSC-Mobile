@@ -37,4 +37,4 @@ test('02', () => {
     expect(conversorTemperatura(300, 'K', 'F')).toBeCloseTo(80.33)
     expect(conversorTemperatura(25, 'C', 'F')).toBeCloseTo(77)
     expect(conversorTemperatura(50, 'R', 'K')).toBeCloseTo(-1)
-});
+})

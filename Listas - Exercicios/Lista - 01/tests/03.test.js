@@ -7,4 +7,4 @@ const zeMaior = function () { return 1 + ((ALTURA_CHICO - ALTURA_ZE) / (CRESCIME
 
 test('03', () => {
     expect(zeMaior()).toBe(41)
-});
+})

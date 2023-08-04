@@ -4,5 +4,5 @@ function verificaExcesso(pesoPeixes) {
 
 test('01', () => {
     expect(verificaExcesso(60)).toBe(40)
-    expect(verificaExcesso(40)).toBe(0);
-});
+    expect(verificaExcesso(40)).toBe(0)
+})

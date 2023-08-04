@@ -21,4 +21,4 @@ test('06', () => {
     expect(piramideInvertida(1)).toBe('1')
     expect(piramideInvertida(5)).toBe('1 2 3 4 5\n  2 3 4\n    3')
     expect(piramideInvertida(9)).toBe('1 2 3 4 5 6 7 8 9\n  2 3 4 5 6 7 8\n    3 4 5 6 7\n      4 5 6\n        5')
-});
+})

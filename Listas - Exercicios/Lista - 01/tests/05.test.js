@@ -19,4 +19,4 @@ test('05', () => {
     expect(formatarSegundos(1)).toBe('00:00:01')
     expect(formatarSegundos(86399)).toBe('23:59:59')
     expect(formatarSegundos(1000000)).toBe('277:46:40')
-});
+})
