@@ -1,14 +1,14 @@
 function conversorTemperatura(temp, entrada, saida) {
     const toKelvin = {
-        'C': (t) => t + 273.15,
-        'F': (t) => (t - 32) * 1.8 + 273.15,
-        'K': (t) => t
+        'C': t => t + 273.15,
+        'F': t => (t - 32) * 1.8 + 273.15,
+        'K': t => t
     }
 
     const fromKelvin = {
-        'C': (t) => t - 273.15,
-        'F': (t) => (t - 273.15) * 1.8 + 32,
-        'K': (t) => t
+        'C': t => t - 273.15,
+        'F': t => (t - 273.15) * 1.8 + 32,
+        'K': t => t
     }
 
     const conversorToKelvin = toKelvin[entrada]
