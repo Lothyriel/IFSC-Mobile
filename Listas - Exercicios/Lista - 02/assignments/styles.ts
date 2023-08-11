@@ -20,6 +20,10 @@ const globalStyles = StyleSheet.create({
     },
     alignBottom: {
         alignItems: 'flex-end'
+    },
+    square: {
+        height: 100,
+        width: 100
     }
 })
 
