@@ -1,5 +1,5 @@
 import { StyleSheet, View } from 'react-native'
-import colors from './colors';
+import colors from './colors'
 
 export function A2a() {
     return (

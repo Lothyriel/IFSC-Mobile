@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { StatusBar } from 'expo-status-bar'
-import { View, TouchableHighlight, StyleSheet } from 'react-native'
+import { View, TouchableHighlight } from 'react-native'
 import { A1a, A1b, A1c } from './assignments/A1'
 import { A2a, A2b, A2c } from './assignments/A2'
 
