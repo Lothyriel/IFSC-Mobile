@@ -4,20 +4,20 @@ import colors from './colors'
 export function A2a() {
     return (
         <View>
-            <View style={[styles.square, colors.red]} />
-            <View style={[styles.square, colors.blue]} />
+            <View style={[styles.halfVertical, colors.red]} />
+            <View style={[styles.halfVertical, colors.blue]} />
         </View>
     )
 }
 
 export function A2b() {
     return (
-        <View style={styles.column}>
+        <View>
             <View style={styles.row}>
-                <View style={[styles.square, colors.red]} />
+                <View style={[styles.halfHorizontal, colors.red]} />
             </View>
             <View style={[styles.row, styles.alignRight]}>
-                <View style={[styles.square, colors.blue]} />
+                <View style={[styles.halfHorizontal, colors.blue]} />
             </View>
         </View>
     )
@@ -31,16 +31,15 @@ export function A2c() {
 }
 
 const styles = StyleSheet.create({
-    column: {
-        width: '100%',
-        height: '100%'
+    halfVertical: {
+        height: '50%'
     },
     row: {
         flexDirection: 'row',
         width: '100%',
         height: '50%'
     },
-    square: {
+    halfHorizontal: {
         width: '50%'
     },
     bottom: {
