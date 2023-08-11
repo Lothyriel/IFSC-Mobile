@@ -26,6 +26,12 @@ export function A2b() {
 export function A2c() {
     return (
         <View>
+            <View style={[styles.row, styles.alignBottom]}>
+                <View style={[styles.halfVertical, styles.thin, colors.red]} />
+            </View>
+            <View style={[styles.row, styles.alignRight]}>
+                <View style={[styles.halfVertical, styles.thin, colors.blue]} />
+            </View>
         </View>
     )
 }
