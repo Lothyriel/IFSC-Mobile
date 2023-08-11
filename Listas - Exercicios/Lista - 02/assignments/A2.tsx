@@ -17,7 +17,7 @@ export function A2b() {
             <View style={styles.row}>
                 <View style={[globalStyles.halfVertical, colors.red]} />
             </View>
-            <View style={[styles.row, styles.alignRight]}>
+            <View style={[styles.row, globalStyles.alignRight]}>
                 <View style={[globalStyles.halfVertical, colors.blue]} />
             </View>
         </View>
@@ -27,10 +27,10 @@ export function A2b() {
 export function A2c() {
     return (
         <View>
-            <View style={[styles.row, styles.alignBottom]}>
+            <View style={[styles.row, globalStyles.alignBottom]}>
                 <View style={[globalStyles.halfVertical, styles.thin, colors.red]} />
             </View>
-            <View style={[styles.row, styles.alignRight]}>
+            <View style={[styles.row, globalStyles.alignRight]}>
                 <View style={[globalStyles.halfVertical, styles.thin, colors.blue]} />
             </View>
         </View>
@@ -45,11 +45,5 @@ const styles = StyleSheet.create({
     },
     thin: {
         height: 30
-    },
-    alignRight: {
-        justifyContent: 'flex-end'
-    },
-    alignBottom: {
-        alignItems: 'flex-end'
     }
 })

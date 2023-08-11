@@ -15,6 +15,12 @@ const globalStyles = StyleSheet.create({
     halfHorizontal: {
         height: '50%'
     },
+    alignRight: {
+        justifyContent: 'flex-end'
+    },
+    alignBottom: {
+        alignItems: 'flex-end'
+    }
 })
 
 export default globalStyles
