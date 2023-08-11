@@ -16,6 +16,9 @@ const colors = StyleSheet.create({
     blue: {
         backgroundColor: 'rgb(173, 216, 230)'
     },
+    yellow: {
+        backgroundColor: 'rgb(255, 255, 0)'
+    }
 })
 
 export default colors

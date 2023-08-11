@@ -31,6 +31,17 @@ export function A3b() {
 export function A3c() {
     return (
         <View>
+            <View style={[styles.row, styles.halfHorizontal]}>
+                <View style={[colors.green, { flex: 3 }]}></View>
+                <View style={[colors.red, { flex: 2 }]}></View>
+                <View style={[colors.blue, { flex: 3 }]}></View>
+                <View style={{ flex: 1 }}></View>
+            </View>
+            <View style={styles.halfHorizontal}>
+                <View style={[styles.midCentered, colors.purple]}>
+                    <View style={[{ height: 165, width: 165}, colors.yellow]}></View>
+                </View>
+            </View>
         </View>
     )
 }
@@ -45,5 +56,10 @@ const styles = StyleSheet.create({
     },
     halfHorizontal: {
         height: '50%'
+    },
+    midCentered: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100%'
     }
 })
