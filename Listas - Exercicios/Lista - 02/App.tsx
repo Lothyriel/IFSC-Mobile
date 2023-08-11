@@ -9,6 +9,8 @@ import { A4a, A4b, A4c } from './assignments/A4'
 export default function App() {
   const [screen, changeScreen] = useState(9)
 
+  const wraparound = (index: number) => index > assignments.length - 1 ? 0 : index
+
   return (
     <View>
       <TouchableHighlight onPress={() => changeScreen(wraparound(screen + 1))}>
@@ -28,10 +30,6 @@ function AssignmentScreen(props: Props) {
   }
 
   return assignment()
-}
-
-function wraparound(index: number) {
-  return index > assignments.length - 1 ? 0 : index
 }
 
 const assignments = [
