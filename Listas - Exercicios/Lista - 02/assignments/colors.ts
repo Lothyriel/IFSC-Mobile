@@ -21,6 +21,9 @@ const colors = StyleSheet.create({
     },
     darkBlue: {
         backgroundColor: 'rgb(0, 0, 255)'
+    },
+    grey: {
+        backgroundColor: 'rgb(128, 128, 128)'
     }
 })
 
