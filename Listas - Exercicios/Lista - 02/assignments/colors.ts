@@ -25,11 +25,11 @@ const colors = StyleSheet.create({
     yellow: {
         backgroundColor: 'rgb(255, 255, 0)'
     },
+    lightGrey: {
+        backgroundColor: 'rgb(176, 196, 222)'
+    },
     grey: {
         backgroundColor: 'rgb(128, 128, 128)'
-    },
-    darkGrey: {
-        backgroundColor: 'rgb(176, 196, 222)'
     },
     pink: {
         backgroundColor: 'rgb(255, 192, 203)'
