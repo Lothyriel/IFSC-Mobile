@@ -1,10 +1,10 @@
-import { StyleSheet, View } from 'react-native'
+import { View } from 'react-native'
 import colors from './colors'
 import globalStyles from './styles'
 
 export function A3a() {
     return (
-        <View style={[styles.container, globalStyles.row]}>
+        <View style={[globalStyles.container, globalStyles.row]}>
             <View style={[colors.green, { flex: 3 }]}></View>
             <View style={[colors.red, { flex: 2 }]}></View>
             <View style={[colors.blue, { flex: 3 }]}></View>
@@ -23,7 +23,7 @@ export function A3b() {
                 <View style={{ flex: 1 }}></View>
             </View>
             <View style={globalStyles.halfHorizontal}>
-                <View style={[styles.container, colors.purple]}></View>
+                <View style={[globalStyles.container, colors.purple]}></View>
             </View>
         </View>
     )
@@ -46,10 +46,3 @@ export function A3c() {
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        width: '100%',
-        height: '100%'
-    }
-})
