@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-export default StyleSheet.create({
+const colors = StyleSheet.create({
     orange: {
         backgroundColor: 'rgb(255, 165, 0)'
     },
@@ -17,3 +17,5 @@ export default StyleSheet.create({
         backgroundColor: 'rgb(173, 216, 230)',
     },
 })
+
+export default colors
