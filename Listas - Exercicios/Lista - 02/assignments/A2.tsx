@@ -1,11 +1,12 @@
 import { StyleSheet, View } from 'react-native'
 import colors from './colors'
+import globalStyles from './styles'
 
 export function A2a() {
     return (
         <View>
-            <View style={[styles.halfHorizontal, colors.red]} />
-            <View style={[styles.halfHorizontal, colors.blue]} />
+            <View style={[globalStyles.halfHorizontal, colors.red]} />
+            <View style={[globalStyles.halfHorizontal, colors.blue]} />
         </View>
     )
 }
@@ -14,10 +15,10 @@ export function A2b() {
     return (
         <View>
             <View style={styles.row}>
-                <View style={[styles.halfVertical, colors.red]} />
+                <View style={[globalStyles.halfVertical, colors.red]} />
             </View>
             <View style={[styles.row, styles.alignRight]}>
-                <View style={[styles.halfVertical, colors.blue]} />
+                <View style={[globalStyles.halfVertical, colors.blue]} />
             </View>
         </View>
     )
@@ -27,25 +28,19 @@ export function A2c() {
     return (
         <View>
             <View style={[styles.row, styles.alignBottom]}>
-                <View style={[styles.halfVertical, styles.thin, colors.red]} />
+                <View style={[globalStyles.halfVertical, styles.thin, colors.red]} />
             </View>
             <View style={[styles.row, styles.alignRight]}>
-                <View style={[styles.halfVertical, styles.thin, colors.blue]} />
+                <View style={[globalStyles.halfVertical, styles.thin, colors.blue]} />
             </View>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
-    halfVertical: {
-        width: '50%'
-    },
     row: {
         flexDirection: 'row',
         width: '100%',
-        height: '50%'
-    },
-    halfHorizontal: {
         height: '50%'
     },
     thin: {

@@ -1,9 +1,10 @@
 import { StyleSheet, View } from 'react-native'
 import colors from './colors'
+import globalStyles from './styles'
 
 export function A1a() {
     return (
-        <View style={styles.midCentered}>
+        <View style={globalStyles.midCentered}>
             <View style={[styles.square, colors.orange]} />
         </View>
     )
@@ -11,7 +12,7 @@ export function A1a() {
 
 export function A1b() {
     return (
-        <View style={styles.midCentered}>
+        <View style={globalStyles.midCentered}>
             <View style={[styles.square, colors.orange]} />
             <View style={[styles.square, colors.purple]} />
             <View style={[styles.square, colors.green]} />
@@ -21,7 +22,7 @@ export function A1b() {
 
 export function A1c() {
     return (
-        <View style={[styles.midCentered, styles.row]}>
+        <View style={[globalStyles.midCentered, globalStyles.row]}>
             <View style={[styles.square, colors.orange]} />
             <View style={[styles.square, colors.purple]} />
             <View style={[styles.square, colors.green]} />
@@ -30,14 +31,6 @@ export function A1c() {
 }
 
 const styles = StyleSheet.create({
-    midCentered: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100%'
-    },
-    row: {
-        flexDirection: 'row'
-    },
     square: {
         height: 100,
         width: 100
