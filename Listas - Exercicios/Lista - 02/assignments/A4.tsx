@@ -38,6 +38,18 @@ export function A4b() {
 export function A4c() {
     return (
         <View>
-        </View>
+            <View style={[globalStyles.spaceBetween, globalStyles.halfHorizontal]}>
+                <View style={[globalStyles.row, globalStyles.alignRight]}>
+                    <View style={[globalStyles.square, colors.red]} />
+                </View>
+                <View style={[globalStyles.square, colors.darkBlue]} />
+            </View>
+            <View style={[globalStyles.spaceBetween, globalStyles.halfHorizontal]}>
+                <View style={[globalStyles.square, colors.red]} />
+                <View style={[globalStyles.row, globalStyles.alignRight]}>
+                    <View style={[globalStyles.square, colors.darkBlue]} />
+                </View>
+            </View>
+        </View >
     )
 }
