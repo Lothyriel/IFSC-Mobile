@@ -3,7 +3,7 @@ import colors from './colors'
 
 export function A1a() {
     return (
-        <View style={styles.centered}>
+        <View style={styles.midCentered}>
             <View style={[styles.square, colors.orange]} />
         </View>
     )
@@ -11,7 +11,7 @@ export function A1a() {
 
 export function A1b() {
     return (
-        <View style={styles.centered}>
+        <View style={styles.midCentered}>
             <View style={[styles.square, colors.orange]} />
             <View style={[styles.square, colors.purple]} />
             <View style={[styles.square, colors.green]} />
@@ -21,7 +21,7 @@ export function A1b() {
 
 export function A1c() {
     return (
-        <View style={[styles.centered, styles.row]}>
+        <View style={[styles.midCentered, styles.row]}>
             <View style={[styles.square, colors.orange]} />
             <View style={[styles.square, colors.purple]} />
             <View style={[styles.square, colors.green]} />
@@ -30,7 +30,7 @@ export function A1c() {
 }
 
 const styles = StyleSheet.create({
-    centered: {
+    midCentered: {
         alignItems: 'center',
         justifyContent: 'center',
         height: '100%'
