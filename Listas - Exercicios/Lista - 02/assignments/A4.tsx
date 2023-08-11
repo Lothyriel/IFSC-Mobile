@@ -1,10 +1,18 @@
-import { StyleSheet, View } from 'react-native'
+import { View } from 'react-native'
 import colors from './colors'
 import globalStyles from './styles'
 
 export function A4a() {
     return (
-        <View>
+        <View style={[{ justifyContent: 'space-between' }, globalStyles.container]}>
+            <View style={[globalStyles.row, globalStyles.alignRight]}>
+                <View style={[globalStyles.square, colors.darkBlue]} />
+                <View style={[globalStyles.square, colors.red]} />
+            </View>
+            <View>
+                <View style={[globalStyles.square, colors.red]} />
+                <View style={[globalStyles.square, colors.darkBlue]} />
+            </View>
         </View>
     )
 }
@@ -22,6 +30,3 @@ export function A4c() {
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-})
