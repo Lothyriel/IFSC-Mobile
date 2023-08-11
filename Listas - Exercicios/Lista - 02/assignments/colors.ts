@@ -14,7 +14,7 @@ const colors = StyleSheet.create({
         backgroundColor: 'rgb(240, 128, 128)'
     },
     lightBlue: {
-        backgroundColor: 'rgb(176, 196, 222)'
+        backgroundColor: 'rgb(173, 216, 230)'
     },
     blue: {
         backgroundColor: 'rgb(173, 216, 230)'
@@ -44,7 +44,7 @@ const colors = StyleSheet.create({
         backgroundColor: 'rgb(255, 239, 213)'
     },
     cream: {
-        backgroundColor: 'rgb(240, 128, 128)'
+        backgroundColor: 'rgb(255, 228, 181)'
     },
     darkCream: {
         backgroundColor: 'rgb(205, 133, 63)'
