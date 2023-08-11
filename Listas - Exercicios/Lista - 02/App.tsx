@@ -5,9 +5,11 @@ import { A1a, A1b, A1c } from './assignments/A1'
 import { A2a, A2b, A2c } from './assignments/A2'
 import { A3a, A3b, A3c } from './assignments/A3'
 import { A4a, A4b, A4c } from './assignments/A4'
+import { A5 } from './assignments/A5'
+import { A6 } from './assignments/A6'
 
 export default function App() {
-  const [screen, changeScreen] = useState(11)
+  const [screen, changeScreen] = useState(12)
 
   const wraparound = (index: number) => index > assignments.length - 1 ? 0 : index
 
@@ -44,5 +46,7 @@ const assignments = [
   A3c,
   A4a,
   A4b,
-  A4c
+  A4c,
+  A5,
+  A6
 ]
