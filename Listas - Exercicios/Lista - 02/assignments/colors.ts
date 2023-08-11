@@ -11,10 +11,10 @@ const colors = StyleSheet.create({
         backgroundColor: 'rgb(144, 238, 144)'
     },
     red: {
-        backgroundColor: 'rgb(240, 128, 128)',
+        backgroundColor: 'rgb(240, 128, 128)'
     },
     blue: {
-        backgroundColor: 'rgb(173, 216, 230)',
+        backgroundColor: 'rgb(173, 216, 230)'
     },
 })
 
