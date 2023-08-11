@@ -4,7 +4,7 @@ import globalStyles from './styles'
 
 export function A4a() {
     return (
-        <View style={[{ justifyContent: 'space-between' }, globalStyles.container]}>
+        <View style={[globalStyles.spaceBetween, globalStyles.container]}>
             <View style={[globalStyles.row, globalStyles.alignRight]}>
                 <View style={[globalStyles.square, colors.darkBlue]} />
                 <View style={[globalStyles.square, colors.red]} />
