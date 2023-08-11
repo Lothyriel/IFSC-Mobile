@@ -12,7 +12,13 @@ export function A2a() {
 
 export function A2b() {
     return (
-        <View>
+        <View style={styles.column}>
+            <View style={styles.row}>
+                <View style={[styles.square, colors.red]} />
+            </View>
+            <View style={[styles.row, styles.alignRight]}>
+                <View style={[styles.square, colors.blue]} />
+            </View>
         </View>
     )
 }
@@ -25,7 +31,22 @@ export function A2c() {
 }
 
 const styles = StyleSheet.create({
+    column: {
+        width: '100%',
+        height: '100%'
+    },
+    row: {
+        flexDirection: 'row',
+        width: '100%',
+        height: '50%'
+    },
     square: {
-        height: '50%',
+        width: '50%'
+    },
+    bottom: {
+        alignContent: 'flex-end'
+    },
+    alignRight: {
+        justifyContent: 'flex-end'
     }
 })
