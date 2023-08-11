@@ -16,4 +16,4 @@ export default StyleSheet.create({
     blue: {
         backgroundColor: 'rgb(173, 216, 230)',
     },
-});
+})
