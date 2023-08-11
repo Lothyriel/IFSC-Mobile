@@ -5,9 +5,9 @@ import globalStyles from './styles'
 export function A3a() {
     return (
         <View style={[globalStyles.container, globalStyles.row]}>
-            <View style={[colors.green, { flex: 3 }]}></View>
-            <View style={[colors.red, { flex: 2 }]}></View>
-            <View style={[colors.blue, { flex: 3 }]}></View>
+            <View style={[{ flex: 3 }, colors.green]}></View>
+            <View style={[{ flex: 2 }, colors.red]}></View>
+            <View style={[{ flex: 3 }, colors.blue]}></View>
             <View style={{ flex: 1 }}></View>
         </View>
     )
@@ -17,9 +17,9 @@ export function A3b() {
     return (
         <View>
             <View style={[globalStyles.row, globalStyles.halfHorizontal]}>
-                <View style={[colors.green, { flex: 3 }]}></View>
-                <View style={[colors.red, { flex: 2 }]}></View>
-                <View style={[colors.blue, { flex: 3 }]}></View>
+                <View style={[{ flex: 3 }, colors.green]}></View>
+                <View style={[{ flex: 2 }, colors.red]}></View>
+                <View style={[{ flex: 3 }, colors.blue]}></View>
                 <View style={{ flex: 1 }}></View>
             </View>
             <View style={globalStyles.halfHorizontal}>
@@ -33,9 +33,9 @@ export function A3c() {
     return (
         <View>
             <View style={[globalStyles.row, globalStyles.halfHorizontal]}>
-                <View style={[colors.green, { flex: 3 }]}></View>
-                <View style={[colors.red, { flex: 2 }]}></View>
-                <View style={[colors.blue, { flex: 3 }]}></View>
+                <View style={[{ flex: 3 }, colors.green]}></View>
+                <View style={[{ flex: 2 }, colors.red]}></View>
+                <View style={[{ flex: 3 }, colors.blue]}></View>
                 <View style={{ flex: 1 }}></View>
             </View>
             <View style={globalStyles.halfHorizontal}>
