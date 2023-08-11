@@ -6,7 +6,7 @@ import { A2a, A2b, A2c } from './assignments/A2'
 import { A3a, A3b, A3c } from './assignments/A3'
 
 export default function App() {
-  const [screen, changeScreen] = useState(0)
+  const [screen, changeScreen] = useState(6)
 
   return (
     <View>
