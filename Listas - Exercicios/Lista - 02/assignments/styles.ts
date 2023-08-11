@@ -29,7 +29,7 @@ const globalStyles = StyleSheet.create({
         height: 100,
         width: 100
     },
-    spaceBetween: {
+    spacedBetween: {
         justifyContent: 'space-between'
     }
 })

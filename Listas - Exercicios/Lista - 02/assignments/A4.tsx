@@ -4,7 +4,7 @@ import globalStyles from './styles'
 
 export function A4a() {
     return (
-        <View style={[globalStyles.spaceBetween, globalStyles.container]}>
+        <View style={[globalStyles.spacedBetween, globalStyles.container]}>
             <View style={[globalStyles.row, globalStyles.alignRight]}>
                 <View style={[globalStyles.square, colors.darkBlue]} />
                 <View style={[globalStyles.square, colors.red]} />
@@ -19,8 +19,8 @@ export function A4a() {
 
 export function A4b() {
     return (
-        <View style={[globalStyles.spaceBetween, globalStyles.container]}>
-            <View style={[globalStyles.row, globalStyles.spaceBetween]}>
+        <View style={[globalStyles.spacedBetween, globalStyles.container]}>
+            <View style={[globalStyles.row, globalStyles.spacedBetween]}>
                 <View style={[globalStyles.square, colors.darkBlue]} />
                 <View style={[globalStyles.square, colors.red]} />
             </View>
@@ -38,13 +38,13 @@ export function A4b() {
 export function A4c() {
     return (
         <View>
-            <View style={[globalStyles.spaceBetween, globalStyles.halfHorizontal]}>
+            <View style={[globalStyles.spacedBetween, globalStyles.halfHorizontal]}>
                 <View style={[globalStyles.row, globalStyles.alignRight]}>
                     <View style={[globalStyles.square, colors.red]} />
                 </View>
                 <View style={[globalStyles.square, colors.darkBlue]} />
             </View>
-            <View style={[globalStyles.spaceBetween, globalStyles.halfHorizontal]}>
+            <View style={[globalStyles.spacedBetween, globalStyles.halfHorizontal]}>
                 <View style={[globalStyles.square, colors.red]} />
                 <View style={[globalStyles.row, globalStyles.alignRight]}>
                     <View style={[globalStyles.square, colors.darkBlue]} />
