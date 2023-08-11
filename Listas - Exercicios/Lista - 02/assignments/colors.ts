@@ -18,6 +18,9 @@ const colors = StyleSheet.create({
     },
     yellow: {
         backgroundColor: 'rgb(255, 255, 0)'
+    },
+    darkBlue: {
+        backgroundColor: 'rgb(0, 0, 255)'
     }
 })
 
