@@ -17,7 +17,8 @@ export default function App() {
   )
 }
 
-function AssignmentScreen(props) {
+type Props = { screen: number }
+function AssignmentScreen(props: Props) {
   const assignment = assignments[props.screen]
 
   if (!assignment) {
@@ -27,7 +28,7 @@ function AssignmentScreen(props) {
   return assignment()
 }
 
-function wraparound(index) {
+function wraparound(index: number) {
   return index > assignments.length - 1 ? 0 : index
 }
 
