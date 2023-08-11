@@ -19,8 +19,19 @@ export function A4a() {
 
 export function A4b() {
     return (
-        <View>
-        </View>
+        <View style={[globalStyles.spaceBetween, globalStyles.container]}>
+            <View style={[globalStyles.row, globalStyles.spaceBetween]}>
+                <View style={[globalStyles.square, colors.darkBlue]} />
+                <View style={[globalStyles.square, colors.red]} />
+            </View>
+            <View style={[globalStyles.row]}>
+                <View>
+                    <View style={[globalStyles.square, colors.red]} />
+                    <View style={globalStyles.square} />
+                    <View style={[globalStyles.square, colors.darkBlue]} />
+                </View>
+            </View>
+        </View >
     )
 }
 
