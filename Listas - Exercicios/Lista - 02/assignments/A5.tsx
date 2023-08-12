@@ -10,7 +10,7 @@ export function A5() {
                 <View style={[styles.circle, styles.border, colors.darkBlue]}></View>
             </View>
             <View style={[{ flex: 5 }, colors.red]}></View>
-            <View style={[{ flex: 2 }, styles.buttonsContainer, globalStyles.row]}>
+            <View style={[{ flex: 2 }, globalStyles.midSpaced, globalStyles.row]}>
                 {RoundSquare(colors.orange)}
                 {RoundSquare(colors.purple)}
                 {RoundSquare(colors.green)}
@@ -38,10 +38,5 @@ const styles = StyleSheet.create({
         borderRadius: 25,
         height: 65,
         width: 100
-    },
-    buttonsContainer: {
-        alignItems: 'center',
-        height: '100%',
-        justifyContent: 'space-evenly'
     }
 })

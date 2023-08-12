@@ -31,6 +31,11 @@ const globalStyles = StyleSheet.create({
     },
     spacedBetween: {
         justifyContent: 'space-between'
+    },
+    midSpaced: {
+        alignItems: 'center',
+        height: '100%',
+        justifyContent: 'space-evenly'
     }
 })
 
