@@ -48,6 +48,9 @@ const colors = StyleSheet.create({
     },
     darkCream: {
         backgroundColor: 'rgb(205, 133, 63)'
+    },
+    black: {
+        backgroundColor: 'black'
     }
 })
 
