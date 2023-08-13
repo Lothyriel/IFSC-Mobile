@@ -11,16 +11,16 @@ export function A5() {
             </View>
             <View style={[{ flex: 5 }, colors.lightRed]}></View>
             <View style={[{ flex: 2 }, globalStyles.midSpaced, globalStyles.row]}>
-                {RoundButton(colors.orange)}
-                {RoundButton(colors.purple)}
-                {RoundButton(colors.green)}
+                {roundButton(colors.orange)}
+                {roundButton(colors.purple)}
+                {roundButton(colors.green)}
             </View>
         </View>
     )
 }
 
 type Color = { backgroundColor: string }
-function RoundButton(color: Color) {
+function roundButton(color: Color) {
     return <View style={[styles.border, styles.roundedButton, color]}></View>
 }
 
