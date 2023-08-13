@@ -5,7 +5,7 @@ import globalStyles from './styles'
 export function A2a() {
     return (
         <View>
-            <View style={[globalStyles.halfHorizontal, colors.red]} />
+            <View style={[globalStyles.halfHorizontal, colors.lightRed]} />
             <View style={[globalStyles.halfHorizontal, colors.blue]} />
         </View>
     )
@@ -15,7 +15,7 @@ export function A2b() {
     return (
         <View>
             <View style={styles.row}>
-                <View style={[globalStyles.halfVertical, colors.red]} />
+                <View style={[globalStyles.halfVertical, colors.lightRed]} />
             </View>
             <View style={[styles.row, globalStyles.alignRight]}>
                 <View style={[globalStyles.halfVertical, colors.blue]} />
@@ -28,7 +28,7 @@ export function A2c() {
     return (
         <View>
             <View style={[styles.row, globalStyles.alignBottom]}>
-                <View style={[globalStyles.halfVertical, styles.thin, colors.red]} />
+                <View style={[globalStyles.halfVertical, styles.thin, colors.lightRed]} />
             </View>
             <View style={[styles.row, globalStyles.alignRight]}>
                 <View style={[globalStyles.halfVertical, styles.thin, colors.blue]} />

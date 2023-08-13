@@ -6,7 +6,7 @@ export function A3a() {
     return (
         <View style={[globalStyles.container, globalStyles.row]}>
             <View style={[{ flex: 3 }, colors.green]}></View>
-            <View style={[{ flex: 2 }, colors.red]}></View>
+            <View style={[{ flex: 2 }, colors.lightRed]}></View>
             <View style={[{ flex: 3 }, colors.blue]}></View>
             <View style={{ flex: 1 }}></View>
         </View>
@@ -18,7 +18,7 @@ export function A3b() {
         <View>
             <View style={[globalStyles.row, globalStyles.halfHorizontal]}>
                 <View style={[{ flex: 3 }, colors.green]}></View>
-                <View style={[{ flex: 2 }, colors.red]}></View>
+                <View style={[{ flex: 2 }, colors.lightRed]}></View>
                 <View style={[{ flex: 3 }, colors.blue]}></View>
                 <View style={{ flex: 1 }}></View>
             </View>
@@ -34,7 +34,7 @@ export function A3c() {
         <View>
             <View style={[globalStyles.row, globalStyles.halfHorizontal]}>
                 <View style={[{ flex: 3 }, colors.green]}></View>
-                <View style={[{ flex: 2 }, colors.red]}></View>
+                <View style={[{ flex: 2 }, colors.lightRed]}></View>
                 <View style={[{ flex: 3 }, colors.blue]}></View>
                 <View style={{ flex: 1 }}></View>
             </View>

@@ -9,7 +9,7 @@ export function A5() {
             <View style={[{ flex: 3 }, globalStyles.midCentered]}>
                 <View style={[styles.circle, styles.border, colors.darkBlue]}></View>
             </View>
-            <View style={[{ flex: 5 }, colors.red]}></View>
+            <View style={[{ flex: 5 }, colors.lightRed]}></View>
             <View style={[{ flex: 2 }, globalStyles.midSpaced, globalStyles.row]}>
                 {RoundButton(colors.orange)}
                 {RoundButton(colors.purple)}

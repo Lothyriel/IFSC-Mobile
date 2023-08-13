@@ -7,10 +7,10 @@ export function A4a() {
         <View style={[globalStyles.spacedBetween, globalStyles.container]}>
             <View style={[globalStyles.row, globalStyles.alignRight]}>
                 <View style={[globalStyles.square, colors.darkBlue]} />
-                <View style={[globalStyles.square, colors.red]} />
+                <View style={[globalStyles.square, colors.lightRed]} />
             </View>
             <View>
-                <View style={[globalStyles.square, colors.red]} />
+                <View style={[globalStyles.square, colors.lightRed]} />
                 <View style={[globalStyles.square, colors.darkBlue]} />
             </View>
         </View>
@@ -22,11 +22,11 @@ export function A4b() {
         <View style={[globalStyles.spacedBetween, globalStyles.container]}>
             <View style={[globalStyles.row, globalStyles.spacedBetween]}>
                 <View style={[globalStyles.square, colors.darkBlue]} />
-                <View style={[globalStyles.square, colors.red]} />
+                <View style={[globalStyles.square, colors.lightRed]} />
             </View>
             <View style={[globalStyles.row]}>
                 <View>
-                    <View style={[globalStyles.square, colors.red]} />
+                    <View style={[globalStyles.square, colors.lightRed]} />
                     <View style={globalStyles.square} />
                     <View style={[globalStyles.square, colors.darkBlue]} />
                 </View>
@@ -40,12 +40,12 @@ export function A4c() {
         <View>
             <View style={[globalStyles.spacedBetween, globalStyles.halfHorizontal]}>
                 <View style={[globalStyles.row, globalStyles.alignRight]}>
-                    <View style={[globalStyles.square, colors.red]} />
+                    <View style={[globalStyles.square, colors.lightRed]} />
                 </View>
                 <View style={[globalStyles.square, colors.darkBlue]} />
             </View>
             <View style={[globalStyles.spacedBetween, globalStyles.halfHorizontal]}>
-                <View style={[globalStyles.square, colors.red]} />
+                <View style={[globalStyles.square, colors.lightRed]} />
                 <View style={[globalStyles.row, globalStyles.alignRight]}>
                     <View style={[globalStyles.square, colors.darkBlue]} />
                 </View>
