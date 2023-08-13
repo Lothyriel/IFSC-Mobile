@@ -18,7 +18,7 @@ export default function App() {
       <TouchableHighlight onPress={() => changeScreen(wraparound(screen + 1))}>
         <AssignmentScreen screen={screen} />
       </TouchableHighlight>
-      <StatusBar style="auto" />
+      <StatusBar style='auto' />
     </View>
   )
 }
@@ -28,7 +28,7 @@ function AssignmentScreen(props: Props) {
   const assignment = assignments[props.screen]
 
   if (!assignment) {
-    throw new Error("Invalid assignment screen")
+    throw new Error('Invalid assignment screen')
   }
 
   return assignment()
