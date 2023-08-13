@@ -21,7 +21,7 @@ export function A5() {
 
 type Color = { backgroundColor: string }
 function roundButton(color: Color) {
-    return <View style={[styles.border, styles.roundedButton, color]}></View>
+    return <View style={[{ height: 65, width: 100 }, styles.border, globalStyles.rounded, color]}></View>
 }
 
 const styles = StyleSheet.create({
@@ -33,10 +33,5 @@ const styles = StyleSheet.create({
         borderRadius: 100,
         height: 145,
         width: 145
-    },
-    roundedButton: {
-        borderRadius: 25,
-        height: 65,
-        width: 100
     }
 })
