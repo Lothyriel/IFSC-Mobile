@@ -9,7 +9,7 @@ import { A5 } from './assignments/A5'
 import { A6 } from './assignments/A6'
 
 export default function App() {
-  const [screen, changeScreen] = useState(13)
+  const [screen, changeScreen] = useState(0)
 
   const wraparound = (index: number) => index > assignments.length - 1 ? 0 : index
 
