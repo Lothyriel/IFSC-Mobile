@@ -13,6 +13,9 @@ const colors = StyleSheet.create({
     lightRed: {
         backgroundColor: 'rgb(240, 128, 128)'
     },
+    red: {
+        backgroundColor: 'red'
+    },
     lightBlue: {
         backgroundColor: 'rgb(173, 216, 230)'
     },
