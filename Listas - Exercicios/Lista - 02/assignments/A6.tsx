@@ -1,4 +1,4 @@
-import { View, StyleSheet } from 'react-native'
+import { View } from 'react-native'
 import colors from './colors'
 import globalStyles from './styles'
 
