@@ -11,17 +11,17 @@ export function A5() {
             </View>
             <View style={[{ flex: 5 }, colors.red]}></View>
             <View style={[{ flex: 2 }, globalStyles.midSpaced, globalStyles.row]}>
-                {RoundSquare(colors.orange)}
-                {RoundSquare(colors.purple)}
-                {RoundSquare(colors.green)}
+                {RoundButton(colors.orange)}
+                {RoundButton(colors.purple)}
+                {RoundButton(colors.green)}
             </View>
         </View>
     )
 }
 
 type Color = { backgroundColor: string }
-function RoundSquare(color: Color) {
-    return <View style={[styles.border, styles.roundedSquare, color]}></View>
+function RoundButton(color: Color) {
+    return <View style={[styles.border, styles.roundedButton, color]}></View>
 }
 
 const styles = StyleSheet.create({
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         height: 145,
         width: 145
     },
-    roundedSquare: {
+    roundedButton: {
         borderRadius: 25,
         height: 65,
         width: 100
