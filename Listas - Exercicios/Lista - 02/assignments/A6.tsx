@@ -30,7 +30,7 @@ function searchContainer() {
                 {optionButton()}
             </View>
             <View style={[{ flex: 1, justifyContent: 'center' }, globalStyles.row]}>
-                <View style={[{ width: '85%', height: '75%' }, colors.darkPink, styles.rounded]}></View>
+                <View style={[{ width: '85%', height: '75%' }, colors.darkPink, globalStyles.rounded]}></View>
             </View>
         </View>
     )
@@ -39,7 +39,7 @@ function searchContainer() {
 function suggestionsContainer() {
     const optionButton = () => (
         <View>
-            <View style={[{ marginTop: 25, width: 85, height: 85 }, colors.lightCream, styles.rounded]}></View>
+            <View style={[{ marginTop: 25, width: 85, height: 85 }, colors.lightCream, globalStyles.rounded]}></View>
             <View style={[{ width: 85, height: 15, marginTop: 15 }, colors.red]}></View>
         </View>
     )
@@ -75,9 +75,3 @@ function footer() {
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-    rounded: {
-        borderRadius: 25
-    }
-})

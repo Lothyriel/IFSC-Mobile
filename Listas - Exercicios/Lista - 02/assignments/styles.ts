@@ -36,6 +36,9 @@ const globalStyles = StyleSheet.create({
         alignItems: 'center',
         height: '100%',
         justifyContent: 'space-evenly'
+    },
+    rounded: {
+        borderRadius: 25
     }
 })
 
