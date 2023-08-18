@@ -5,7 +5,7 @@ import { A1 } from './assignments/A1'
 import { A2 } from './assignments/A2'
 
 export default function App() {
-  const [screen, changeScreen] = useState(0)
+  const [screen, changeScreen] = useState(1)
 
   const wraparound = (index: number) => index > assignments.length - 1 ? 0 : index
 
@@ -31,5 +31,6 @@ function AssignmentScreen(props: Props) {
 }
 
 const assignments = [
-  A1
+  A1,
+  A2
 ]
