@@ -3,9 +3,10 @@ import { StatusBar } from 'expo-status-bar'
 import { View, TouchableHighlight } from 'react-native'
 import { A1 } from './assignments/A1'
 import { A2 } from './assignments/A2'
+import { A3 } from './assignments/A3'
 
 export default function App() {
-  const [screen, changeScreen] = useState(1)
+  const [screen, changeScreen] = useState(2)
 
   const wraparound = (index: number) => index > assignments.length - 1 ? 0 : index
 
@@ -32,5 +33,6 @@ function AssignmentScreen(props: Props) {
 
 const assignments = [
   A1,
-  A2
+  A2,
+  A3
 ]
