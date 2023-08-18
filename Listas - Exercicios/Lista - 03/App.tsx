@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { View, TouchableHighlight } from 'react-native'
 import { A1 } from './assignments/A1'
+import { A2 } from './assignments/A2'
 
 export default function App() {
   const [screen, changeScreen] = useState(0)
