@@ -16,7 +16,11 @@ export function A5() {
     <View style={styles.centered}>
       <Text style={[{ fontSize: 20, paddingBottom: '5%' }]}> {states[index]} </Text>
       <View style={{ width: '80%' }}>
-        <Button title={'Próximo'} color={colors.green} onPress={() => changeIndex(index + 1)} ></Button>
+        <Button
+          title={'Próximo'}
+          color={colors.green}
+          onPress={() => { changeIndex(index + 1) }}
+        />
       </View>
     </View>
   )
