@@ -9,15 +9,16 @@ import { A5 } from './assignments/A5'
 import { A9 } from './assignments/A9'
 import { A6 } from './assignments/A6'
 import { A7 } from './assignments/A7'
+import { A8 } from './assignments/A8'
 
 export default function App() {
-  const [screen, changeScreen] = useState(7)
-
-  const wraparound = (index: number) => index > assignments.length - 1 ? 0 : index
+  const [screen, changeScreen] = useState(8)
+  const screens = 9
+  const wrap = (index: number) => index > screens ? 1 : index
 
   return (
     <View>
-      <TouchableHighlight onPress={() => changeScreen(wraparound(screen + 1))}>
+      <TouchableHighlight onPress={() => changeScreen(wrap(screen + 1))}>
         <AssignmentScreen screen={screen} />
       </TouchableHighlight>
       <StatusBar style='auto' />
@@ -27,22 +28,27 @@ export default function App() {
 
 type Props = { screen: number }
 function AssignmentScreen(props: Props) {
-  const assignment = assignments[props.screen]
+  switch (props.screen) {
+    case 1:
+      return <A1 />
+    case 2:
+      return <A2 />
+    case 3:
+      return <A3 />
+    case 4:
+      return <A4 />
+    case 5:
+      return <A5 />
+    case 6:
+      return <A6 />
+    case 7:
+      return <A7 />
+    case 8:
+      return <A8 />
+    case 9:
+      return <A9 />
 
-  if (!assignment) {
-    throw new Error('Invalid assignment screen')
+    default:
+      throw new Error('Invalid assignment screen')
   }
-
-  return assignment()
 }
-
-const assignments = [
-  A1,
-  A2,
-  A3,
-  A4,
-  A5,
-  A6,
-  A7,
-  A9
-]
