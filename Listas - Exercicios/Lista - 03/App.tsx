@@ -12,7 +12,7 @@ import { A7 } from './assignments/A7'
 import { A8 } from './assignments/A8'
 
 export default function App() {
-  const [screen, changeScreen] = useState(8)
+  const [screen, changeScreen] = useState(1)
   const screens = 9
   const wrap = (index: number) => index > screens ? 1 : index
 
