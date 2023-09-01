@@ -6,7 +6,9 @@ const colors = {
   black: 'rgb(0, 0, 0)',
   lightGreen: 'rgb(144, 238, 144)',
   green: 'rgb(0, 128, 0)',
-  white: 'rgb(255, 255, 255)'
+  white: 'rgb(255, 255, 255)',
+  orange: 'rgb(255, 165, 0)',
+  purple: 'rgb(128, 0, 128)'
 }
 
 export default colors
