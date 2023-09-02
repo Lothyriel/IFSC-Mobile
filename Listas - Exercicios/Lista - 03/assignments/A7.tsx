@@ -23,6 +23,7 @@ export function A7() {
 
     changeSituacao(situacao)
     changeImc(imc.toFixed(2))
+    changeRenderTable(false)
   }
 
   return (
@@ -45,30 +46,36 @@ export function A7() {
           <Text style={styles.output}>{`Situação: ${situacao}`}</Text>
         </View>
       </View>
-      <View style={styles.table}>
-        <View>
-          <Text style={styles.tableTitle}>RESULTADO</Text>
-          {createtableContentLeft('Abaixo de 17')}
-          {createtableContentLeft('Entre 17 e 18,49')}
-          {createtableContentLeft('Entre 18,5 e 24,99')}
-          {createtableContentLeft('Entre 25 e 29,99')}
-          {createtableContentLeft('Entre 30 e 34,99')}
-          {createtableContentLeft('Entre 35 e 39,99')}
-          {createtableContentLeft('Acima de 40')}
-        </View>
-
-        <View>
-          <Text style={styles.tableTitle}>SITUAÇÃO</Text>
-          {createtableContentRight('Muito abaixo do peso')}
-          {createtableContentRight('Abaixo do peso')}
-          {createtableContentRight('Peso normal')}
-          {createtableContentRight('Acima do peso')}
-          {createtableContentRight('Obesidade I')}
-          {createtableContentRight('Obesidade II(severa)')}
-          {createtableContentRight('Obesidade III (mórbida)')}
-        </View>
-      </View>
+      {renderTable && tableComponent()}
     </View >
+  )
+}
+
+function tableComponent() {
+  return (
+    <View style={styles.table}>
+      <View>
+        <Text style={styles.tableTitle}>RESULTADO</Text>
+        {createtableContentLeft('Abaixo de 17')}
+        {createtableContentLeft('Entre 17 e 18,49')}
+        {createtableContentLeft('Entre 18,5 e 24,99')}
+        {createtableContentLeft('Entre 25 e 29,99')}
+        {createtableContentLeft('Entre 30 e 34,99')}
+        {createtableContentLeft('Entre 35 e 39,99')}
+        {createtableContentLeft('Acima de 40')}
+      </View>
+
+      <View>
+        <Text style={styles.tableTitle}>SITUAÇÃO</Text>
+        {createtableContentRight('Muito abaixo do peso')}
+        {createtableContentRight('Abaixo do peso')}
+        {createtableContentRight('Peso normal')}
+        {createtableContentRight('Acima do peso')}
+        {createtableContentRight('Obesidade I')}
+        {createtableContentRight('Obesidade II(severa)')}
+        {createtableContentRight('Obesidade III (mórbida)')}
+      </View>
+    </View>
   )
 }
 
