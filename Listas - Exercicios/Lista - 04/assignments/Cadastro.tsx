@@ -8,9 +8,7 @@ export function A3() {
 
   const handler = () => {
     if ([nome, idade, cpf].some(x => x == "")) {
-      Alert.alert('Alert', 'Por favor, preencha todos os campos!', [
-        { text: 'OK' }
-      ])
+      errorAlert()
     } else {
       Alert.alert('Alert', `Nome: ${nome}\nIdade: ${idade}\nCPF: ${cpf}`, [
         { text: 'OK' }
@@ -35,9 +33,7 @@ export function A4() {
 
   const handler = () => {
     if ([nome, idade, cpf].some(x => x == "")) {
-      Alert.alert('Alert', 'Por favor, preencha todos os campos!', [
-        { text: 'OK' }
-      ])
+      errorAlert()
     } else {
       setusers([...users, { nome, idade, cpf }])
     }
@@ -62,9 +58,7 @@ export function A5() {
 
   const addHandler = () => {
     if ([nome, idade, cpf].some(x => x == "")) {
-      Alert.alert('Alert', 'Por favor, preencha todos os campos!', [
-        { text: 'OK' }
-      ])
+      errorAlert()
     } else {
       setusers([...users, { nome, idade, cpf }])
     }
@@ -151,6 +145,12 @@ function usersContainer(users: User[]) {
       </View>
     </View>
   )
+}
+
+function errorAlert() {
+  Alert.alert('Alert', 'Por favor, preencha todos os campos!', [
+    { text: 'OK' }
+  ])
 }
 
 const colors = {
