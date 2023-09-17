@@ -1,9 +1,8 @@
 import { LinearGradient } from "expo-linear-gradient"
 import { ReactNode, useState } from "react"
 import { Button, View, StyleSheet, Text, TextInput } from "react-native"
-import { Navigation, RootStackParamList } from "../Routes"
+import { Navigation, RootStackParamList } from "./App"
 import { RouteProp, useNavigation } from '@react-navigation/native'
-
 
 export function Inicio() {
   const navigation = useNavigation<Navigation>()
