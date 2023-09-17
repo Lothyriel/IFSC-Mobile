@@ -1,20 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { BottomTabNavigationProp, createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { NavigationContainer } from '@react-navigation/native'
+import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons'
+import { Imc, PesoIdeal, SuperficieCorporea } from './Screens'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <NavigationContainer>
+      <Tab.Navigator backBehavior='history' screenOptions={{ headerShown: false }}>
+        <Tab.Screen name="imc" component={Imc} options={{
+          tabBarIcon: () => <Ionicons name="calculator" size={24} color="black" />
+        }} />
+        <Tab.Screen name="peso" component={PesoIdeal} options={{
+          tabBarIcon: () => <MaterialCommunityIcons name="scale-bathroom" size={24} color="black" />
+        }} />
+        <Tab.Screen name="superficie" component={SuperficieCorporea} options={{
+          tabBarIcon: () => <MaterialCommunityIcons name="human" size={24} color="black" />
+        }} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export type Routes = {
+  "imc": undefined
+  "peso": undefined,
+  "superficie": undefined
+}
+
+export type Navigation = BottomTabNavigationProp<Routes, 'imc'>
+
+const Tab = createBottomTabNavigator<Routes>()
