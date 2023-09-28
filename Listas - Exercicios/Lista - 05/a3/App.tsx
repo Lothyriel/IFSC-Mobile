@@ -1,6 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native"
 import { DrawerNavigationProp, createDrawerNavigator } from "@react-navigation/drawer"
-import { Contatos, Sobre } from "./Screens"
+import { Contatos, Sobre, Info } from "./Screens"
 
 export default function App() {
   return (
@@ -8,19 +8,23 @@ export default function App() {
       <Drawer.Navigator>
         <Drawer.Screen name="Contatos" component={Contatos} />
         <Drawer.Screen name="Sobre" component={Sobre} />
+        <Drawer.Screen name="Informações" component={Info} options={{
+          drawerItemStyle: { display: 'none' }
+        }} />
       </Drawer.Navigator>
     </NavigationContainer>
   )
 }
 
-export type RootStackParamList = {
+export type AppRoutes = {
   "Contatos": undefined
-  "Sobre": {
-    nome: string,
-    telefone: string,
+  "Sobre": undefined,
+  "Informações": {
+    nome: string
+    telefone: string
   }
 }
 
-export type Navigation = DrawerNavigationProp<RootStackParamList, 'Contatos'>
+export type AppNavigation = DrawerNavigationProp<AppRoutes, 'Contatos'>
 
-const Drawer = createDrawerNavigator<RootStackParamList>()
+const Drawer = createDrawerNavigator<AppRoutes>()
