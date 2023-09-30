@@ -49,16 +49,7 @@ export function Contatos() {
     ["Willen Leolatto", "(48) 993445566"],
     ["João Bueno", "(48) 999994848"],
     ["Fábio Aiub", "(48) 997183211"],
-    ["Eduardo Fogaça", "(48) 99547364"],
-
-    ["Alexandre Perin", "(49) 991234562"],
-    ["Wilson Castelo", "(48) 999674310"],
-    ["Leonardo Bravo", "(48) 993474212"],
-    ["Vilma Kasburg", "(48) 998487818"],
-    ["Willen Leolatto", "(48) 993445566"],
-    ["João Bueno", "(48) 999994848"],
-    ["Fábio Aiub", "(48) 997183211"],
-    ["Eduardo Fogaça", "(48) 99547364"],
+    ["Eduardo Fogaça", "(48) 99547364"]
   ]
 
   const render = (c: string[]) => {
@@ -90,9 +81,12 @@ export function Info(props: InfoProps) {
   const { nome, telefone } = props.route.params
 
   return (
-    <View>
-      <Text>{nome}</Text>
-      <Text>{telefone}</Text>
+    <View style={{ marginTop: '15%', justifyContent: 'center', alignItems: 'center' }}>
+      <View style={{ width: '38%', marginBottom: '3%' }}>
+        <ProfilePicture />
+      </View>
+      <Text style={{ fontSize: 32, fontWeight: '700', marginBottom: '2%' }}>{nome}</Text>
+      <Text style={{ fontSize: 20 }}>{telefone}</Text>
     </View>
   )
 }
