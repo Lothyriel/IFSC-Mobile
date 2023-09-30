@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from "@react-navigation/native"
+import { Inicio, Perfil } from "./Screens"
+import { NativeStackNavigationProp, createNativeStackNavigator } from "@react-navigation/native-stack"
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Rede Social IFSC" component={Inicio} />
+        <Stack.Screen name="Perfil" component={Perfil} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export type Routes = {
+  "Rede Social IFSC": undefined
+  "Perfil": undefined,
+}
+
+export type Navigation = NativeStackNavigationProp<Routes, 'Rede Social IFSC'>
+
+const Stack = createNativeStackNavigator<Routes>()
