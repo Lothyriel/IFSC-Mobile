@@ -6,8 +6,6 @@ import { useState } from "react"
 export function Inicio() {
   const navigation = useNavigation<Navigation>()
 
-  const [seguindo, setSeguindo] = useState(false)
-
   return (
     <View style={{ alignItems: 'center' }}>
       <View style={{ width: '20%', marginTop: '35%' }}>
@@ -30,7 +28,11 @@ export function Inicio() {
       </View>
 
       <View style={{ width: '25%', marginTop: '5%' }}>
-        <Button title="Ver Perfil" color={colors.green} onPress={() => navigation.navigate('Perfil')} />
+        <Button
+          title="Ver Perfil"
+          color={colors.green}
+          onPress={() => navigation.navigate('Perfil')}
+        />
       </View>
     </View >
   )
@@ -58,7 +60,7 @@ function IfscLogo() {
   })
 
   return (
-    <View style={{ width: '100%' }}>
+    <View>
       <View style={styles.row}>
         <View style={[styles.piece, styles.ball]}></View>
         <View style={[styles.piece, styles.block]}></View>
@@ -82,17 +84,29 @@ function IfscLogo() {
 }
 
 export function Perfil() {
+  const navigation = useNavigation<Navigation>()
+  const [seguindo, setSeguindo] = useState(false)
+
   return (
     <View style={{ padding: '3%' }}>
       <View style={{ borderWidth: 1.5, padding: '3%', height: '100%' }}>
-        <View style={{ height: '30%' }}>
-          {follow()}
+        <View style={{ flex: 3, marginBottom: '5%' }}>
+          <Picture />
+        </View>
+        <View style={{ justifyContent: 'space-between', flex: 7 }}>
+          <Desc />
+          <View style={{ alignSelf: 'center' }}>
+            <Button
+              title={"Voltar"}
+              color={colors.green}
+              onPress={() => navigation.navigate("Rede Social IFSC")} />
+          </View>
         </View>
       </View>
     </View >
   )
 
-  function follow() {
+  function Picture() {
     return (
       <View style={{ flexDirection: 'row', height: '100%' }}>
         <Image
@@ -111,6 +125,18 @@ export function Perfil() {
             color={colors.green}
             onPress={() => setSeguindo(!seguindo)} />
         </View>
+      </View>
+    )
+  }
+
+  function Desc() {
+    return (
+      <View>
+        <Text style={{ fontSize: 20, fontWeight: '600', marginBottom: '3%' }}>Descrição</Text>
+        <Text>
+          Sou desenvolvedor .NET e Angular, mas sou um Rustacean de coração,
+          apaixonado por Games de simulação e Aviação, mas jogo de tudo um pouco.
+        </Text>
       </View>
     )
   }
