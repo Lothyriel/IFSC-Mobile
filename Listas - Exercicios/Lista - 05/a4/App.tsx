@@ -1,14 +1,19 @@
 import { NavigationContainer } from "@react-navigation/native"
-import { Inicio, Perfil } from "./Screens"
+import { Inicio, Perfil, FollowContext } from "./Screens"
 import { NativeStackNavigationProp, createNativeStackNavigator } from "@react-navigation/native-stack"
+import { useState } from "react"
 
 export default function App() {
+  const [seguindo, setSeguindo] = useState(false)
+
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Rede Social IFSC" component={Inicio} />
-        <Stack.Screen name="Perfil" component={Perfil} />
-      </Stack.Navigator>
+      <FollowContext.Provider value={{ following: seguindo, setFollow: (f) => setSeguindo(f) }}>
+        <Stack.Navigator>
+          <Stack.Screen name="Rede Social IFSC" component={Inicio} />
+          <Stack.Screen name="Perfil" component={Perfil} />
+        </Stack.Navigator>
+      </FollowContext.Provider >
     </NavigationContainer>
   )
 }

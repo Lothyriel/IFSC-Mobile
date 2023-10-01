@@ -1,7 +1,9 @@
 import { Button, View, StyleSheet, Text, Image } from "react-native"
 import { Navigation } from "./App"
 import { useNavigation } from '@react-navigation/native'
-import { useState } from "react"
+import { createContext, useContext } from "react"
+
+export const FollowContext = createContext({ following: false, setFollow: (_: boolean) => { } })
 
 export function Inicio() {
   const navigation = useNavigation<Navigation>()
@@ -85,7 +87,7 @@ function IfscLogo() {
 
 export function Perfil() {
   const navigation = useNavigation<Navigation>()
-  const [seguindo, setSeguindo] = useState(false)
+  const followCtx = useContext(FollowContext)
 
   return (
     <View style={{ padding: '3%' }}>
@@ -121,9 +123,9 @@ export function Perfil() {
             <Text>Ciência da Computação - 2024</Text>
           </View>
           <Button
-            title={seguindo ? "Deixar de Seguir" : "Seguir"}
+            title={followCtx.following ? "Deixar de Seguir" : "Seguir"}
             color={colors.green}
-            onPress={() => setSeguindo(!seguindo)} />
+            onPress={() => followCtx.setFollow(!followCtx.following)} />
         </View>
       </View>
     )
