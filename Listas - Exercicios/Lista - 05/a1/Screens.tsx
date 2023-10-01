@@ -60,7 +60,7 @@ export function Form() {
   )
 }
 
-type MyScreenRouteProp = RouteProp<RootStackParamList, 'Resumo'>;
+type MyScreenRouteProp = RouteProp<RootStackParamList, 'Resumo'>
 
 export function Resumo(props: { route: MyScreenRouteProp }) {
   const { cpf, telefone, nome } = props.route.params

@@ -87,9 +87,9 @@ export function PesoIdeal() {
       borderColor: 'gray',
       color: 'blue'
     }
-  ]), []);
+  ]), [])
 
-  const [selectedSexoId, setSelectedId] = useState("1");
+  const [selectedSexoId, setSelectedId] = useState("1")
 
   const handler = (altura: string) => {
     const nAltura = parseInt(altura)
